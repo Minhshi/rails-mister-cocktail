@@ -12,15 +12,19 @@
 </head>
 
 <body>
- <nav class="navbar navbar-light bg-light">
+ <nav class="navbar">
   <a class="navbar-brand" href="#">
-  <%= image_tag 'cocktail.png', alt: 'logo', class: "cocktail" %>
-  </a>
-  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-        class="fa fa-bars fa-1x"></i></span></button>
+    <%= image_tag 'cocktail.png', alt: 'cocktail', class: "cocktail" %>
 
-</nav>
+
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li><%= link_to "Action", "#" %></li>
+      <li><%= link_to "Action", "#" %></li>
+      <li><%= link_to "Action", "#" %></li>
+    </ul>
+  </nav>
   <%= yield %>
   <%= javascript_include_tag "application" %>
   <%= javascript_pack_tag "application" %>

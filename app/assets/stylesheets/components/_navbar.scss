@@ -8,7 +8,16 @@
   min-height: 50px;
   margin-bottom: 0px;
   border: 1px solid transparent;
-  background-color: white;
+  background-color: black;
+}
+
+.fa-bars {
+  padding-top: 15px;
+  font-size: 30px;
+  color: #E91E63;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
 }
 
 // /* Main navbar */

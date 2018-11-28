@@ -2,24 +2,26 @@
   <div class="banner-content">
     <h1>Secret Cocktails</h1>
     <p>Get your taste buds racing</p>
-    <!-- <a class="btn btn-primary btn-lg">Explore now</a> -->
-    <!-- <div class="row" > -->
-      <div class="col-xs-6 col-xs-offset-3" >
-        <%= link_to 'Explore Now', '', class: "btn btn-sm animated-button thar-three", style: "
+    <div class="col-xs-6 col-xs-offset-3" >
+      <%= link_to 'Explore Now', '', class: "btn btn-sm animated-button thar-three", style: "
       z-index: 1;"%>
-      <!-- <a href="#" class="btn btn-sm animated-button thar-three" style=" -->
-      <!-- z-index: 1;">Explore Now</a> -->
     </div>
-    <!-- </div> -->
   </div>
 </div>
-
-<h1>Cocktail Secrets</h1>
-
-<ul>
-  <% @cocktails.each do |c| %>
-  <li><%= link_to c.name, cocktail_path(c) %></li>
-  <% end %>
-</ul>
-
-<h5><%= link_to "Add new cocktail", new_cocktail_path  %></h5>
+<div class="main-content" style="height: 100vh">
+  <h1>Top Secrets</h1>
+  <p>Behind dozens of Classic Cocktails</p>
+  <div class="cards">
+    <% @cocktails.first(6).each do |c| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card-photo">
+        <%= link_to cl_image_tag(c.photo, height: 200, width: 300, crop: :fill, :radius=>10), cocktail_path(c) %>
+      </div>
+      <div class="card-name">
+        <%= link_to c.name, cocktail_path(c) %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+    <div class="footer"><%= link_to "Add new cocktail", new_cocktail_path  %></div>
+</div>

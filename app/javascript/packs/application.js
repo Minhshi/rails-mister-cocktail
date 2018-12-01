@@ -9,3 +9,12 @@
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
+import { loadDynamicBannerText } from '../components/text.js';
+loadDynamicBannerText();
+
+$(function() {
+  $('.btn').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $('.main-content').offset().top}, 500, 'linear');
+  });
+});

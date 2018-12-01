@@ -13,11 +13,11 @@
 
 <body>
  <nav class="navbar">
-  <a class="navbar-brand" href="#">
-    <%= image_tag 'cocktail.png', alt: 'cocktail', class: "cocktail" %>
+ <!--  <a class="navbar-brand" href="#"> -->
+    <%= link_to image_tag('cocktail.png', :alt => 'cocktail', :class => "cocktail", :class => "navbar-brand"), root_path %>
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
     <ul class="dropdown-menu dropdown-menu-right">
-      <li><%= link_to "Action", "#" %></li>
+      <li><%= link_to "Add new cocktail", new_cocktail_path %></li>
       <li><%= link_to "Action", "#" %></li>
       <li><%= link_to "Action", "#" %></li>
     </ul>

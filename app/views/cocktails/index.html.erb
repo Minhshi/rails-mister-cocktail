@@ -8,11 +8,11 @@
     </div>
   </div>
 </div>
-<div class="main-content" style="height: 100vh">
+<div class="main-content" style="height: calc(100vh - 50px)">
   <h1>Top Secrets</h1>
-  <p>Behind dozens of Classic Cocktails</p>
+  <p><span id="typed"></span></p>
   <div class="cards">
-    <% @cocktails.first(6).each do |c| %>
+    <% @cocktails.each do |c| %>
     <div class="col-xs-12 col-sm-4">
       <div class="card-photo">
         <%= link_to cl_image_tag(c.photo, height: 200, width: 300, crop: :fill, :radius=>10), cocktail_path(c) %>
@@ -23,5 +23,5 @@
     </div>
     <% end %>
   </div>
-    <div class="footer"><%= link_to "Add new cocktail", new_cocktail_path  %></div>
+    <div class="footer"><%= link_to "Made with ", "https://github.com/Minhshi" %><%= link_to "", "https://github.com/Minhshi", class: "fas fa-heart" %></div>
 </div>

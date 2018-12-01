@@ -1,6 +1,10 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 html,
 body {
  margin:0;
@@ -11,7 +15,43 @@ body {
  min-height:100%;
  position:relative;
 }
+.cocktail-container {
+  min-height:100%;
+  position:relative;
+}
 .body {
  padding:10px;
  padding-bottom:60px;   /* Height of the footer */
- }
+}
+.cocktail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.ingredient-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.fa-glass-martini {
+  color: yellow;
+  padding-right: 10px;
+}
+.cocktail-info h1 {
+  font-size: 50px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+.cocktail-info {
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+.dose-form {
+  padding-top: 20px;
+}

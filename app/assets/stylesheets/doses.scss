@@ -1,3 +1,11 @@
 // Place all the styles related to the doses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.dose-container {
+  min-height:100%;
+ position:relative;
+}
+.invalid-feedback {
+  color: #E91E63;
+  font-size: 15px;
+}

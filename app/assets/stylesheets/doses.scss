@@ -2,10 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .dose-container {
-  min-height:100%;
+min-height:100%;
  position:relative;
 }
 .invalid-feedback {
   color: #E91E63;
   font-size: 15px;
+}
+.ingredient-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.fa-glass-martini {
+  color: yellow;
+  padding-right: 10px;
+}
+.dose-form {
+  padding-top: 20px;
 }

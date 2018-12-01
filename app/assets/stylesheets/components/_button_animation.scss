@@ -1,7 +1,6 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-/* Victoria Buttons */
 a.animated-button.thar-three {
   color: #fff;
   cursor: pointer;
@@ -9,7 +8,6 @@ a.animated-button.thar-three {
   position: relative;
   border: 2px solid #E91E63;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-  // 0s;
 }
 a.animated-button.thar-three:hover {
   color: #fff !important;
@@ -33,5 +31,4 @@ a.animated-button.thar-three:before {
   color: #fff !important;
   background: #E91E63;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-  // 0s;
 }

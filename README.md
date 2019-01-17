@@ -1,24 +1,20 @@
-# README
+<h1 align="center">Secret Cocktails</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p align="center">Top Secrets - Behind dozens of classic cocktails</p>
 
-Things you may want to cover:
+<table width="100%">
+  <tr>
+    <th>Page</th>
+    <th>Features</th>
+  </tr>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_500/v1547720709/Secret%20Cocktails/screencapture-secret-cocktails-herokuapp-2019-01-17-11_15_25.png" alt=""></td>
+    <td>
+      <ul>
+        <li>Banner</li>
+        <li>List of Cocktails</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

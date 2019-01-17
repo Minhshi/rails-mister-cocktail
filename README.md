@@ -16,5 +16,14 @@
       </ul>
     </td>
   </tr>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_500/v1547720695/Secret%20Cocktails/screencapture-secret-cocktails-herokuapp-cocktails-1-2019-01-17-11_16_08.png" alt=""></td>
+    <td>
+      <ul>
+        <li>See ingredients and amount thereof for a cocktail</li>
+        <li>Add, edit and delete ingredient as needed</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
